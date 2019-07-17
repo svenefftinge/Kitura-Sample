@@ -68,15 +68,14 @@ matrix:
       osx_image: xcode10.2
       sudo: required
       env: KITURA_NIO=1
-# Pending Travis Xcode 11 image
-#    - os: osx
-#      osx_image: xcode11
-#      sudo: required
-#      env: SWIFT_SNAPSHOT=$SWIFT_DEVELOPMENT_SNAPSHOT
-#    - os: osx
-#      osx_image: xcode11
-#      sudo: required
-#      env: SWIFT_SNAPSHOT=$SWIFT_DEVELOPMENT_SNAPSHOT KITURA_NIO=1
+    - os: osx
+      osx_image: xcode11
+      sudo: required
+      env: SWIFT_SNAPSHOT=$SWIFT_DEVELOPMENT_SNAPSHOT
+    - os: osx
+      osx_image: xcode11
+      sudo: required
+      env: SWIFT_SNAPSHOT=$SWIFT_DEVELOPMENT_SNAPSHOT KITURA_NIO=1
 
 before_install:
   - git clone https://github.com/IBM-Swift/Package-Builder.git
